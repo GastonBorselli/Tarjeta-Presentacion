@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/imagenes/code.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 2px rgb(171,157,157,.5);
+}
+.header{
+    border-right: 1px solid #ddd;
+}
+.description{
+    background: #dee2e6;
+}
+.header,.description{
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    max-width: 100px;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+.profile-picture:hover{
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, -1);
+}
+.header h2{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 41px;
+    color: #e76f51;
+}
+.header h4{
+    color: black;
+    font-family: 'Teko';
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.description{
+    position: relative;
+}
+.description p{
+    color: black;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    margin: 20px 30px;
+
+}
+.mas-info{
+    padding: 5px 5px;
+    margin-top: 80px;
+    font-size: 14px;
+    font-family: 'Josefin Sans';
+}
+.description .social{
+    margin-top: 15px;
+}
+.social .fa-brands{
+    color: #000;
+    font-size: 25px;
+    line-height: 40px;
+    transition: .6s;
+    position: relative;
+}
+.social .fa-solid{
+    color: #000;
+    font-size: 25px;
+    line-height: 40px;
+    transition: .6s;
+    position: relative;
+}
+.social a{
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px;
+    margin-right: 5px;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+.social a:hover .fa-brands{
+    color: #fff;
+}
+.social a:hover .fa-solid{
+    color: #fff;
+}
+.social a:hover{
+    transform: translate(0,-10px);
+}
+.social a:nth-child(1):hover {
+    background: #4267B2;
+}
+.social a:nth-child(2):hover {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social a:nth-child(3):hover {
+    background: #25D366;
+}
+.social a:nth-child(4):hover {
+    background: #0A66C2;
+}
+.social a:nth-child(5):hover {
+    background: #00a2ed;
+}
+.social a:nth-child(6):hover {
+    background: #333;
+}
+
+@media (max-width: 640px) {
+
+    .card-container{
+        display: block;
+        min-width: 250px;
+
+    }
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+    .description{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+    .header h4{
+        margin: 0;
+    }
+  
+}
